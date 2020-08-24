@@ -1,12 +1,12 @@
 # ParallelProgrammingProject
 This project is about parallelize and accelerate an application described in the paper ["Tunable Approximation to Control Time-to-Solution in an HPC Molecular Docking Mini APP"](https://arxiv.org/abs/1901.06363). The aim of the application is to find the better pose of a molecule through all the of possible rotations of the fragments of the molecule.
 
-##Technologies used
+## Technologies used
 - C
 - Cuda Toolkit V11
-- OpenMP
+- OpenMP.
 
-##Description of the files
+## Description of the files
 All the .cu files in this repo contains the same application parallelized in different versions:
 -`kernel_np.cu`: the serial implementation of the application. 
 -`kernel_p_is_ligand_feasible.cu`: parallelized function is_ligan_feasible.
@@ -21,4 +21,4 @@ In the molecules folder there are the molecules in mol2 format.
 
 ## How to compile
 After cloning this repo, compile every file with `nvcc name_of_the_file.cu -o name_of_the_executable`. 
-File `kernel_p_place_best_angle_3.cu` must be compiled with `nvcc -Xcompiler -openmp kernel_p_place_best_angle_3.cu -o name_of_the_executable`
+File `kernel_p_place_best_angle_3.cu` must be compiled with: `nvcc -Xcompiler -openmp kernel_p_place_best_angle_3.cu -o name_of_the_executable`
