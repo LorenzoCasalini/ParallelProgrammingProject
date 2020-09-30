@@ -15,7 +15,8 @@ All the .cu files in this repo contains the same application parallelized in dif
 - `kernel_p_measure_expansion.cu`: parallelized function measure_expansion.
 - `kernel_p_place_best_angle.cu`: parallelized function place_best_angle.
 - `kernel_p_place_best_angle_2.cu`: parallelized function place_best_angle with different teqniques. 
-- `kernel_p_place_best_angle_3.cu`: parallelized function place_best_angle and concurrently processing the molecules using OMP threads. 
+- `kernel_p_place_best_angle_3.cu`: parallelized function place_best_angle and concurrently processing the molecules using OMP threads.
+- `ParallelProgrammingProject.pptx`: power point presentation of the project
 
 In the molecules folder there are the molecules in mol2 format. 
 
